@@ -1,0 +1,35 @@
+{
+  "name": "pec3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel index.html",
+    "parcel:build": "parcel build index.html",
+    "clean": "rimraf dist .cache .cache-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuri1995/pec3.git"
+  },
+  "keywords": [],
+  "author": "Núria Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nuri1995/pec3/issues"
+  },
+  "homepage": "https://github.com/nuri1995/pec3#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5"
+  }
+}

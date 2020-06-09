@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Module Bundlers</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Núria Cruz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/logo.cecc779a.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.78032849.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/12ee87ddfa.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <nav>
+          <ul class="menu">
+            <li>
+              <a href="/index.html" title="Inicio"><img class="logo" src="/logo.cecc779a.png" title="Desarrollo Front-End" alt="Desarrollo Front-End"></a>
+            </li>
+            <li>
+              <a href="/pages/lenguajes.html" title="Lenguajes del Front-end">LENGUAJES DEL FRONT-END</a>
+            </li>
+            <li>
+              <a class="actual_menu" href="/pages/module.html" title="Module Bundlers">MODULE BUNDLERS</a>
+            </li>
+            <li>
+              <a href="#" title="Preprocesadores" class="construccion">PREPROCESADORES</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div>
+        <h1>
+          Webpack
+        </h1>
+        <div class="content">
+          <img class="imgDestacada" src="/webpack_logo.fa873004.png" alt="logo Webpack">
+          <p>
+            WebPack es básicamente un empaquetador de módulos o module bundler,
+            pero gracias a un de sus componentes, los plugins, puede hacer las
+            veces de tasks runner, es decir podemos hacer tareas de todo tipo,
+            como mover directorios, hacer clean up, etc. También se puede
+            considerar una evolución de Grunt y Gulp, ya que permite de alguna
+            manera automatizar los procesos principales que son transpilar y
+            preprocesar código de .scss a .css, de ES7 a ES5/6, etc...
+          </p>
+
+          <p>
+            En aplicaciones web, comúnmente, tenemos muchos módulos con
+            dependencias.
+          </p>
+          <p>
+            Cuando hablamos de módulos tenemos que entender también qué sistemas
+            de módulos se utilizan. En el navegador no existía ningún sistema de
+            módulos predefinido, había que usar alguna especificación de
+            módulos, de los que existían diferentes. Dependiendo de la que se
+            usara había que utilizar una librería específica, que se encargase
+            de transformar esos módulos a algo que finalmente el navegador
+            pudiese entender.
+          </p>
+          <p>
+            Estos sistemas de módulos, de los que existen muchos, ya que en
+            aplicaciones web cada proyecto utilizaba el suyo según el que
+            quisiesen implementar, están todos soportados en Webpack, por lo que
+            podemos utilizar cualquiera o hacer una mezcla de varios para
+            desarrollar nuestras aplicaciones.
+          </p>
+
+          <p>
+            Podemos tener, por ejemplo, un módulo JS que vaya a depender de
+            otros módulos .js, que tenga imágenes en diferentes formatos, como
+            JPG o PNG. Podemos tener ficheros CSS o estar utilizando algún
+            preprocesador de CSS, como puede ser SASS, Less o Stylus. Al final
+            tenemos muchos de estos módulos y una serie de dependencias para
+            cada módulo.
+          </p>
+
+          <figure class="center">
+            <img src="/webpack.69b18b81.jpg" alt="webpack">
+          </figure>
+
+          <p>
+            Webpack se encarga de coger todos estos módulos y los transforma a
+            assets que puede entender el navegador, como por ejemplo archivos
+            JS, CSS, imágenes, videos, etc.
+          </p>
+
+          <p>
+            Todo este proceso de empaquetado es de lo que realmente se encarga
+            Webpack.
+          </p>
+
+          <h2>Las ventajas y las desventajas de Webpack</h2>
+          <figure class="right">
+            <img src="/pc.ba7e518f.jpg" alt="webpack">
+          </figure>
+          <p>
+            Como en todas las herramientas existentes, es fácil encontrarnos con
+            elementos que nos ayuden y nos faciliten nuestros quehaceres diarios
+            o que nos bloqueen el camino a trazar. Una de las mayores ventajas
+            que nos proporciona Webpack, es la facilidad que nos brinda para
+            configurar en un único fichero todo lo que queremos que conforme la
+            carpeta de assets pública, es decir, ficheros debidamente
+            compilados, minificados y transpilados, que reducen
+            significativamente el peso de dichos archivos y adicionalmente, los
+            hace compatibles con los navegadores que actualmente soportamos.
+          </p>
+
+          <p>
+            Por otro lado, es importante contar con su versatilidad, ya que, es
+            posible configurar webpack, tanto para almacenar todo en un único
+            fichero minificado como para gestionar los assets por formatos,
+            funcionalidad, etc. Y así, modularizar las diferentes secciones del
+            proyecto.
+          </p>
+
+          <p>
+            Al reducir el peso de los ficheros que se descarga el navegador de
+            nuestra aplicación web y la cantidad de archivos reducimos la
+            cuantía de peticiones que el navegador debe realizar al servidor
+            para cargar la página, mejorando así, la velocidad de carga de la
+            misma.
+          </p>
+
+          <p>
+            Otra de las oportunidades que nos brinda la herramienta, es el uso
+            de los módulos, esto es algo que realmente nos brinda ES6, pero que
+            por el momento tendremos que transpilar con ayuda de Webpack. Con
+            ello, podremos crear un sistema de módulos en nuestro proyecto que
+            nos permita exportar funciones y objetos con mayor complejidad desde
+            un archivo JS, el cual, luego nos permitirá reutilizarlo e
+            importarlo todas las veces que sea necesario.
+          </p>
+          <figure class="left">
+            <picture>
+              <source media="(max-width: 768px)" srcset="/lego_mobile.a7fc6109.jpg">
+              <img src="/lego_desktop.19bfc4f0.jpg" alt="webpack">
+            </picture>
+          </figure>
+          <p>
+            Pero no todo van a ser facilidades, ¿verdad? En lo que se refiere a
+            la curva de aprendizaje, podemos determinar que es pequeña, puesto
+            que, necesitas tener de partida ciertos conocimientos sobre los
+            formatos que te interesa compilar, para entender cómo funciona
+            webpack y en qué te beneficia utilizarlo. Una vez comprendemos para
+            qué sirve es muy sencillo utilizarlo.
+          </p>
+
+          <p>
+            Lo cierto es que Webpack es interesante cuando el proyecto a abordar
+            tiene una cantidad mínima de assets, es decir, si tenemos un
+            proyecto pequeño solo podremos sacar partido del minificado de
+            recursos, pero también puedes aplicarlo como metodología de trabajo
+            aunque el proyecto de inicio sea pequeño puesto que nunca sabrás la
+            magnitud final del mismo.
+          </p>
+
+          <p>
+            Webpack no es como Gulp, un automatizador de tareas, debes tener en
+            cuenta que nació con el objetivo de manipular correctamente ficheros
+            Javascript, es por eso que para poder manipular ficheros CSS,
+            necesita trabajar con ciertos loaders para poder interpretarlos
+            correctamente.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="nosotros">
+        <a href="#" title="Sobre nosotros">Sobre nosotros</a>
+        <a href="#" title="Aviso legal">Aviso legal</a>
+        <a href="#" title="Política de privacidad">Política de privacidad</a>
+      </div>
+      <div class="rrss">
+        <a href="#" title="Facebook"><i class="fab fa-facebook"></i> </a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="footer_logo">
+        <figure>
+          <img class="clip-teclado" src="/teclado.952c5a4d.jpeg" alt="Desarrollo Front-End" title="Desarrollo Front-End">
+          <figcaption>WIKI FRONT-END</figcaption>
+        </figure>
+      </div>
+      <div class="copyright">
+        <p>
+          Textos elaborados a partir de la información consultada en
+          <a href="https://openwebinars.net/blog/webpack-que-es-actualizado/">
+            https://openwebinars.net/blog/webpack-que-es-actualizado/
+          </a>
+          y
+          <a href="https://www.iebschool.com/blog/que-es-webpack-pasos-seguir-business-tech/">https://www.iebschool.com/blog/que-es-webpack-pasos-seguir-business-tech/</a>
+        </p>
+        <p>
+          © 2019-2020 Núria Cruz Sanchez. Trabajo realizado para la asignatura
+          Herramientas HTML y CSS I.
+        </p>
+      </div>
+    </footer>
+    <script src="/pec3.e31bb0bc.js"></script>
+  </body>
+</html>
