@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap"
       rel="stylesheet"
     />
     <script
@@ -102,7 +102,7 @@
           </p>
 
           <figure class="center">
-            <img src="../img/webpack.jpg" alt="webpack" />
+            <img data-src="../img/webpack.jpg" class="lazyload" alt="" />
           </figure>
 
           <p>
@@ -118,7 +118,7 @@
 
           <h2>Las ventajas y las desventajas de Webpack</h2>
           <figure class="right">
-            <img src="../img/pc.jpg" alt="webpack" />
+            <img data-src="../img/pc.jpg" class="lazyload" alt="webpack" />
           </figure>
           <p>
             Como en todas las herramientas existentes, es fácil encontrarnos con
@@ -161,9 +161,13 @@
             <picture>
               <source
                 media="(max-width: 768px)"
-                srcset="../img/lego_mobile.jpg"
+                data-srcset="../img/lego_mobile.jpg"
               />
-              <img src="../img/lego_desktop.jpg" alt="webpack" />
+              <img
+                data-src="../img/lego_desktop.jpg"
+                alt="webpack"
+                class="lazyload"
+              />
             </picture>
           </figure>
           <p>
@@ -235,5 +239,6 @@
       </div>
     </footer>
     <script src="../index.js"></script>
+    <script src="../lazysizes.min.js" async=""></script>
   </body>
 </html>
