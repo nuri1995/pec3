@@ -116,7 +116,13 @@
           </p>
 
           <figure class="center">
-            <img src="../img/escritorio.jpg" alt="HTML" />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="../img/escritorio_mobile.jpg"
+              />
+              <img src="../img/escritorio.jpg" alt="escritorio" />
+            </picture>
           </figure>
 
           <h3>Las ventajas del JavaScript:</h3>
@@ -227,8 +233,15 @@
               </p>
             </li>
           </ul>
+          +
           <figure class="center">
-            <img src="../img/ordenador.jpg" alt="HTML" />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="../img/ordenador_mobile.jpg"
+              />
+              <img src="../img/ordenador.jpg" alt="ordenador" />
+            </picture>
           </figure>
         </div>
       </div>

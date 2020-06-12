@@ -98,9 +98,14 @@
           </p>
 
           <figure class="center">
-            <img src="../img/webpack.jpg" alt="webpack" />
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="../img/webpack_mobile.jpg"
+              />
+              <img src="../img/webpack.jpg" alt="webpack" />
+            </picture>
           </figure>
-
           <p>
             Webpack se encarga de coger todos estos módulos y los transforma a
             assets que puede entender el navegador, como por ejemplo archivos
